@@ -1,6 +1,6 @@
 # PATCHES : Ontology-Based Model for Contextualizing Situation of ADHD Symptoms Manifestation
 
-This is the repository for ISWC 2025 submission for `PATCHES : Ontology-Based Model for Contextualizing Situation of ADHD Symptoms Manifestation`.
+This is the repository for `PATCHES : Ontology-Based Model for Contextualizing Situation of ADHD Symptoms Manifestation`.
 This study introduce a modular, ontology-based approach for contextualizing ADHD manifestations, incorporating a set of rules to infer situational interpretations of symptoms.
 To support effective deployment, we propose a multi-agent strategy for populating the modular ontology.
 
@@ -121,37 +121,16 @@ Once the process completes successfully, you can directly access the Gradio inte
 * **View the results of our experiments** via the **Profile History** and **Module History** tabs.
 * **Re-run the evaluation** of these experiments using the **Evaluation** tab to visualize the outcomes.
 
-2.
-
 
 #### Manual Execution in the Docker Container
 
 To manually connect to the container and run the code:
 
-1. **Start Docker and Docker Compose**:
-
    ```bash
    docker-compose start
    ```
 
-2. **Access the container**:
-
-   ```bash
-   docker exec -it ontology-population-app bash
-   ```
-
-3. **Activate the virtual environment** (automatically created during the first run):
-
-   ```bash
-   source .venv/bin/activate
-   ```
-
-4. **Launch the Gradio interface**:
-
-   ```bash
-   python src/ontology_population_project/gradio_interface.py
-   ```
-
+You can directly access the Gradio interface.
 
 ### 🌐 Launch the Gradio interface in your browser
 Once Gradio is launched, open your browser at the following address:
