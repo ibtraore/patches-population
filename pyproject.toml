@@ -1,8 +1,8 @@
 [project]
 name = "ontology_population_project"
 version = "0.1.0"
-description = "ontology_population_project using crewAI"
-authors = [{ name = "Your Name", email = "you@example.com" }]
+description = "PATCHES population using crewAI"
+authors = [{ name = "Author", email = "author@author.com" }]
 requires-python = ">=3.10,<3.13"
 dependencies = [
     "crewai[tools]>=0.118.0,<1.0.0", 
