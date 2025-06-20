@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1747647670077" name="http://www.semanticweb.org/ibrahim/ontologies/2024/4/activity/" uri="Activity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747647670077" name="http://www.semanticweb.org/ibrahim/ontologies/2024/4/challenge/" uri="Challenge.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747647670077" name="http://www.semanticweb.org/ibrahim/ontologies/2024/4/environment/" uri="Environment.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747647670077" name="http://www.semanticweb.org/ibrahim/ontologies/2024/4/person/" uri="Person.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747647670077" name="http://www.semanticweb.org/ibrahim/ontologies/2024/4/profile/" uri="Profile.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747647670077" name="duplicate:http://www.semanticweb.org/ibrahim/ontologies/2024/4/situation" uri="enriched_situation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747647670077" name="duplicate:http://www.semanticweb.org/ibrahim/ontologies/2024/4/situation" uri="enriched_situation_1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747647670077" name="http://www.semanticweb.org/ibrahim/ontologies/2024/4/situation/" uri="Situation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1747647670077" name="http://www.semanticweb.org/ibrahim/ontologies/2024/4/time/" uri="Time.owl"/>
+    </group>
+</catalog>
