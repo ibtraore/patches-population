@@ -1,8 +1,7 @@
-# PATCHES : Ontology-Based Model for Contextualizing Situation of ADHD Symptoms Manifestation
+# A Semantic Framework for the Contextual Interpretation of ADHD Symptom Manifestations
 
-This is the repository for `PATCHES : Ontology-Based Model for Contextualizing Situation of ADHD Symptoms Manifestation`.
-This study introduce a modular, ontology-based approach for contextualizing ADHD manifestations, incorporating a set of rules to infer situational interpretations of symptoms.
-To support effective deployment, we propose a multi-agent strategy for populating the modular ontology.
+This is the repository for `A Semantic Framework for the Contextual Interpretation of ADHD Symptom Manifestations`.
+This study introduce a complete framework designed to support clinical reasoning for interpreting the manifestations of ADHD symptoms.
 
 For further information regarding ADHD and its situational variability, please visit the following links :
 - https://psychiatryonline.org/doi/10.1176/appi.pn.2021.10.20
@@ -12,13 +11,13 @@ For further information regarding ADHD and its situational variability, please v
 
 ---
 
-## 🔗 PATCHES semantic Model
+## 🔗 The semantic Model
 
-![Alt text](images/PATCHES.png)
+![Alt text](images/Ontology_modules.png)
 
 ---
 
-## 🔎 PATCHES model instances
+## 🔎 Experimentation of the ontology model 
 We illustrate how our semantic model can interpret two situations involving patients with ADHD.
 
 
@@ -46,10 +45,10 @@ By applying rules 1, 4, 11, 18, 19, 23, and 25, the conclusion is that, in the c
 
 ---
 
-## 🤖 PATCHES knowledge Extraction Crew (PEC)
-PEC represents the multi-agent system used to automatically identify and extract information from various sources and integrate it into our ontology.
+## 🤖 The population system
+It represents the multi-agent system used to automatically identify and extract information from various sources and integrate it into our ontology.
 
-![Alt text](images/PEC.png)
+![Alt text](images/Population.png)
 
 ### 🛠️ Implementation details and Agents design
 
@@ -59,7 +58,7 @@ CrewAI enables the creation of agents with distinct roles, supports automated ta
 The following present the key components of our multi-agent system :
 * **Document Parser** : We employed [LLamaParse](https://www.llamaindex.ai/llamaparse) as a document parser to convert PDF documents containing tables and charts into structured data suitable for our agents.
 * **Prompt Design for Agents** : Prompting is a key factor in the performance of LLM agents. In our system, each agent’s role, behavior, and assigned task are defined using a YAML configuration, as described in Section 3.4 of our paper. While automatic prompt optimization methods (e.g., APO) exist, their use in multi-agent systems remains complex due to inter-agent dependencies and limited reward signals (see H. Zhou et al.,[ref](https://arxiv.org/abs/2502.02533)). We therefore chose a manual prompt design approach, offering better control and suitability for our scenario.
-  Each task-specific prompt includes (see Section 3.4 of our paper):
+  Each task-specific prompt includes :
     * Clear task instructions
     * Relevant ontology concepts and relations (from the ontology)
     * Few-shot annotated examples
@@ -68,14 +67,14 @@ The following present the key components of our multi-agent system :
 * **Agent** : Each agent is an LLM guided by precise instructions and enhanced with appropriate tools, dedicated to one or more ontological modules.
 * **Task** : A task encapsulates all the requisite execution specifics, including a detailed description, the designated agent, the necessary tools, and other pertinent parameters, thereby enabling a diverse spectrum of action complexities.
 
-### 📋 Results of Knowledge extraction using PEC
+### 📋 Results of Knowledge extraction using the population system
 
-The rest of our experimental evaluation is based on data from three ADHD-diagnosed patients.
+Our experimental evaluation is based on data from two ADHD-diagnosed patients.
 Diagnostic reports were collected in collaboration with a doctor, in PDF format. The information about planning is in Excel format. Check the experimentation files in `./experimentation_data/`.
 The following table present for each case, the value of Precision (P), Recall (R), F1-score, Ontology Conformance (OC), Subject/Relation/Object Hallucinations (SH/RH/OH).
 Numbers in bold identify the best results for each case.
 
-![Alt text](images/results.png)
+![Alt text](images/result.png)
 
 ---
 ## ⚡️ Repo content
